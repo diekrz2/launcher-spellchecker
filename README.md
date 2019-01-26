@@ -1,3 +1,5 @@
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/paypalme/my/profile)
+
 # Launcher Spell checker
 
 This is a plugin for Moksha's Quick Launcher to check the spelling of words using aspell as a backend.
