@@ -10,7 +10,7 @@ AC_CANONICAL_BUILD
 AC_CANONICAL_HOST
 AC_ISC_POSIX
 
-AM_INIT_AUTOMAKE(1.8)
+AM_INIT_AUTOMAKE([foreign])
 AC_CONFIG_HEADERS(config.h)
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
@@ -69,7 +69,6 @@ AC_OUTPUT([
 Makefile
 src/Makefile
 module.desktop
-e_module.spec
 $po_makefile_in
 ], [
 ])
