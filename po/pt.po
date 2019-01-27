@@ -1,11 +1,11 @@
-# Portuguese translation for Everything-aspell.
+# Portuguese translation for spell-checker.
 # This file is put in the public domain.
 # Sérgio Marques smarquespt@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Everything-aspell\n"
-"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"Project-Id-Version: spell-checker VERSION\n"
+"Report-Msgid-Bugs-To: ylee@bodhilinux.com\n"
 "POT-Creation-Date: 2019-01-27 07:08-0500\n"
 "PO-Revision-Date: 2012-11-29 10:16-0000\n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"

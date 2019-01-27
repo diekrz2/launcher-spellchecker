@@ -1,12 +1,12 @@
-# French translation for enlightenment
+# French translation for spell-checker.
 # Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
 # This file is distributed under the same license as the enlightenment package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: enlightenment\n"
-"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"Project-Id-Version: spell-checker VERSION\n"
+"Report-Msgid-Bugs-To: ylee@bodhilinux.com\n"
 "POT-Creation-Date: 2019-01-27 07:08-0500\n"
 "PO-Revision-Date: 2013-06-20 07:24+0000\n"
 "Last-Translator: Eliovir <Unknown>\n"
