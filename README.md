@@ -54,7 +54,7 @@ Full credit for the orginal code of this module go the enlightenment developers:
 * Gustavo Barbieri
 * Hannes Janetzek
 
-and any others than may committed on this module.
+and any others than may have committed on this module.
 
 <p align="center">
   <i>I Stand on the shoulders of giants.</a>
