@@ -62,49 +62,49 @@ _exe_restart(Plugin *p)
 
    if (p->lang && (p->lang[0] != '\0'))
      {
-	if (_conf->command == CMD_ASPELL)
-	  {
-	     lang_opt = "-l";
-	     lang_val = p->lang;
-	  }
-	else if (_conf->command == CMD_HUNSPELL)
-	  {
-	     lang_opt = "-d";
-	     lang_val = p->lang;
-	  }
-	else
-	  {
-	     lang_opt = "";
-	     lang_val = "";
-	  }
-     }
-   else if (_conf->lang)
+   if (_conf->command == CMD_ASPELL)
      {
-	if (_conf->command == CMD_ASPELL)
-	  {
-	     lang_opt = "-l";
-	     lang_val = _conf->lang;
-	  }
-	else if (_conf->command == CMD_HUNSPELL)
-	  {
-	     lang_opt = "-d";
-	     lang_val = _conf->lang;
-	  }
-	else
-	  {
-	     lang_opt = "";
-	     lang_val = "";
-	  }
+        lang_opt = "-l";
+        lang_val = p->lang;
+     }
+   else if (_conf->command == CMD_HUNSPELL)
+     {
+        lang_opt = "-d";
+        lang_val = p->lang;
      }
    else
      {
-	lang_opt = "";
-	lang_val = "";
+        lang_opt = "";
+        lang_val = "";
+     }
+     }
+   else if (_conf->lang)
+     {
+   if (_conf->command == CMD_ASPELL)
+     {
+        lang_opt = "-l";
+        lang_val = _conf->lang;
+     }
+   else if (_conf->command == CMD_HUNSPELL)
+     {
+        lang_opt = "-d";
+        lang_val = _conf->lang;
+     }
+   else
+     {
+        lang_opt = "";
+        lang_val = "";
+     }
+     }
+   else
+     {
+   lang_opt = "";
+   lang_val = "";
      }
 
    len = snprintf(cmd, sizeof(cmd),
-		  commands[_conf->command - 1],
-		  lang_opt, lang_val);
+        commands[_conf->command - 1],
+        lang_opt, lang_val);
    if (len >= (int)sizeof(cmd))
      return 0;
 
@@ -158,28 +158,28 @@ _suggestions_add(Plugin *p, const char *line)
    s = strchr(line, ':');
    if (!s)
      {
-	ERR("ASPELL: ERROR missing suggestion delimiter: '%s'", line);
-	return;
+   ERR("ASPELL: ERROR missing suggestion delimiter: '%s'", line);
+   return;
      }
    s++;
 
    line = _space_skip(s);
    while (*line)
      {
-	int len;
+   int len;
 
-	s = strchr(line, ',');
-	if (s)
-	  len = s - line;
-	else
-	  len = strlen(line);
+   s = strchr(line, ',');
+   if (s)
+     len = s - line;
+   else
+     len = strlen(line);
 
-	_item_add(p, line, len, 1);
+   _item_add(p, line, len, 1);
 
-	if (s)
-	  line = _space_skip(s + 1);
-	else
-	  break;
+   if (s)
+     line = _space_skip(s + 1);
+   else
+     break;
      }
 }
 
@@ -199,38 +199,38 @@ _cb_data(void *data, int type __UNUSED__, void *event)
    word = p->input;
    for (l = e->lines; l && l->line; l++)
      {
-	const char *word_end;
-	int word_size;
+   const char *word_end;
+   int word_size;
 
-	if (p->is_first)
-	  {
-	     ERR("ASPELL: %s", l->line);
-	     p->is_first = 0;
-	     continue;
-	  }
+   if (p->is_first)
+     {
+        ERR("ASPELL: %s", l->line);
+        p->is_first = 0;
+        continue;
+     }
 
-	word_end = _space_find(word);
-	word_size = word_end - word;
+   word_end = _space_find(word);
+   word_size = word_end - word;
 
-	switch (l->line[0])
-	  {
-	   case '*':
-	      _item_add(p, word, word_size, 1);
-	      break;
-	   case '&':
-	      _item_add(p, word, word_size, 1);
-	      _suggestions_add(p, l->line);
-	      break;
-	   case '#':
-	      break;
-	   case '\0':
-	      break;
-	   default:
-	      ERR("ASPELL: unknown output: '%s'", l->line);
-	  }
+   switch (l->line[0])
+     {
+      case '*':
+         _item_add(p, word, word_size, 1);
+         break;
+      case '&':
+         _item_add(p, word, word_size, 1);
+         _suggestions_add(p, l->line);
+         break;
+      case '#':
+         break;
+      case '\0':
+         break;
+      default:
+         ERR("ASPELL: unknown output: '%s'", l->line);
+     }
 
-	if (*word_end)
-	  word = _space_skip(word_end + 1);
+   if (*word_end)
+     word = _space_skip(word_end + 1);
      }
 
    if (p->base.items)
@@ -263,7 +263,7 @@ _begin(Evry_Plugin *plugin, const Evry_Item *it __UNUSED__)
    EVRY_PLUGIN_INSTANCE(p, plugin);
 
    instances++;
-   
+
    return EVRY_PLUGIN(p);
 }
 
@@ -278,55 +278,55 @@ _fetch(Evry_Plugin *plugin, const char *input)
 
    if (strlen(input) < plugin->config->min_query)
      {
-	EVRY_PLUGIN_ITEMS_FREE(p);
-	return 0;
+   EVRY_PLUGIN_ITEMS_FREE(p);
+   return 0;
      }
 
    if (!p->handler.data)
      {
-	if (!p->handler.data)
-	  p->handler.data = ecore_event_handler_add
-	    (ECORE_EXE_EVENT_DATA, _cb_data, p);
-	if (!p->handler.del)
-	  p->handler.del = ecore_event_handler_add
-	    (ECORE_EXE_EVENT_DEL, _cb_del, p);
+   if (!p->handler.data)
+     p->handler.data = ecore_event_handler_add
+       (ECORE_EXE_EVENT_DATA, _cb_data, p);
+   if (!p->handler.del)
+     p->handler.del = ecore_event_handler_add
+       (ECORE_EXE_EVENT_DEL, _cb_del, p);
 
-	if (!_exe_restart(p))
-	  return 0;
+   if (!_exe_restart(p))
+     return 0;
      }
 
    len = sizeof(LANG_MODIFIER) - 1;
    if (strncmp(input, LANG_MODIFIER, len) == 0)
      {
-	const char *lang;
+   const char *lang;
 
-	EVRY_PLUGIN_ITEMS_FREE(p);
+   EVRY_PLUGIN_ITEMS_FREE(p);
 
-	input += len;
-	for (s = input; *s != '\0'; s++)
-	  if (isspace(*s) || *s == ';')
-	    break;
+   input += len;
+   for (s = input; *s != '\0'; s++)
+     if (isspace(*s) || *s == ';')
+       break;
 
-	if (*s == '\0') /* just apply language on ' ' or ';' */
-	  return 0;
+   if (*s == '\0') /* just apply language on ' ' or ';' */
+     return 0;
 
-	if (s - input > 0)
-	  lang = eina_stringshare_add_length(input, s - input);
-	else
-	  lang = NULL;
+   if (s - input > 0)
+     lang = eina_stringshare_add_length(input, s - input);
+   else
+     lang = NULL;
 
-	if (p->lang) eina_stringshare_del(p->lang);
-	if (p->lang != lang)
-	  {
-	     p->lang = lang;
-	     if (!_exe_restart(p))
-	       return 1;
-	  }
+   if (p->lang) eina_stringshare_del(p->lang);
+   if (p->lang != lang)
+     {
+        p->lang = lang;
+        if (!_exe_restart(p))
+          return 1;
+     }
 
-	if (*s == '\0')
-	  return 0;
+   if (*s == '\0')
+     return 0;
 
-	input = s + 1;
+   input = s + 1;
      }
 
    input = _space_skip(input);
@@ -370,8 +370,8 @@ _finish(Evry_Plugin *plugin)
 
    if (p->exe)
      {
-	ecore_exe_quit(p->exe);
-	ecore_exe_free(p->exe);
+   ecore_exe_quit(p->exe);
+   ecore_exe_free(p->exe);
      }
 
    IF_RELEASE(p->lang);
@@ -389,20 +389,20 @@ _plugins_init(const Evry_API *_api)
      return EINA_FALSE;
 
    _plug = EVRY_PLUGIN_BASE(N_("Spell Checker"), _module_icon, EVRY_TYPE_TEXT,
-			    _begin, _finish, _fetch);
+             _begin, _finish, _fetch);
    _plug->config_path = _config_path;
    _plug->history     = EINA_FALSE;
    _plug->async_fetch = EINA_TRUE;
 
    if (evry->plugin_register(_plug, EVRY_PLUGIN_SUBJECT, 100))
      {
-	Plugin_Config *pc = _plug->config;
-	pc->view_mode = VIEW_MODE_LIST;
-	pc->aggregate = EINA_FALSE;
-	/* pc->top_level = EINA_FALSE; */
-	pc->trigger = eina_stringshare_add(TRIGGER);
-	pc->trigger_only = EINA_TRUE;
-	pc->min_query = 4;
+   Plugin_Config *pc = _plug->config;
+   pc->view_mode = VIEW_MODE_LIST;
+   pc->aggregate = EINA_FALSE;
+   /* pc->top_level = EINA_FALSE; */
+   pc->trigger = eina_stringshare_add(TRIGGER);
+   pc->trigger_only = EINA_TRUE;
+   pc->min_query = 4;
      }
 
    return EINA_TRUE;
@@ -447,7 +447,7 @@ _conf_dialog(E_Container *con, const char *params __UNUSED__)
    v->basic.apply_cfdata = _basic_apply;
 
    cfd = e_config_dialog_new(con, _("Spell Checker"),
-			     _config_path, _config_path, _module_icon, 0, v, NULL);
+              _config_path, _config_path, _module_icon, 0, v, NULL);
 
    _conf->cfd = cfd;
    return cfd;
@@ -527,9 +527,9 @@ _fill_data(E_Config_Dialog_Data *cfdata)
 static int
 _basic_apply(E_Config_Dialog *cfd __UNUSED__, E_Config_Dialog_Data *cfdata)
 {
-#define CP(_name)					\
-   if (_conf->_name)					\
-     eina_stringshare_del(_conf->_name);		\
+#define CP(_name)             \
+   if (_conf->_name)             \
+     eina_stringshare_del(_conf->_name);     \
    _conf->_name = eina_stringshare_add(cfdata->_name);
 #define C(_name) _conf->_name = cfdata->_name;
    C(command);
@@ -569,10 +569,10 @@ _conf_free(void)
 {
    if (_conf)
      {
-	if (_conf->custom) eina_stringshare_del(_conf->custom);
-	if (_conf->lang)   eina_stringshare_del(_conf->lang);
+   if (_conf->custom) eina_stringshare_del(_conf->custom);
+   if (_conf->lang)   eina_stringshare_del(_conf->lang);
 
-	E_FREE(_conf);
+   E_FREE(_conf);
      }
 }
 
@@ -586,7 +586,7 @@ _conf_init(E_Module *m)
 
    snprintf(title, sizeof(title), "%s: %s", _("Launcher Plugin"), _("Spell Checker"));
    e_configure_registry_item_add(_config_path, 110, title,
-				 NULL, _module_icon, _conf_dialog);
+             NULL, _module_icon, _conf_dialog);
 
    _conf_edd = E_CONFIG_DD_NEW("Module_Config", Module_Config);
 
@@ -604,8 +604,8 @@ _conf_init(E_Module *m)
    _conf = e_config_domain_load(_config_domain, _conf_edd);
 
    if (_conf && !e_util_module_config_check(_("Everything Aspell"),
-					    _conf->version,
-					    MOD_CONFIG_FILE_VERSION))
+                   _conf->version,
+                   MOD_CONFIG_FILE_VERSION))
      _conf_free();
 
    if (!_conf) _conf_new();
