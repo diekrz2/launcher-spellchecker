@@ -25,7 +25,7 @@ It is a resurrection of the old e17 [*everything-aspell module*](https://git.enl
 
 # Usage
 
-
+*Comming Soon*
 
 # Installation
 
@@ -47,6 +47,10 @@ Then the usual:
 make
 sudo make install
 ```
+
+# Support This Project
+
+*Comming soon*
 
 # Credits
 
