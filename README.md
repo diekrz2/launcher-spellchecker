@@ -40,7 +40,7 @@ sudo apt install moksha-module-spellcheck
 
 Other users need to compile the code:
 
-First install all the needed dependencies. Note this includes not only EFL but the EFL header files as well as the [e_dbus](https://git.enlightenment.org/legacy/e_dbus.git/) header files. If you have compiled and installed EFL, edbus and Moksha from source code this should be no problem. 
+First install all the needed dependencies. Note this includes not only EFL but the EFL header files as well as the [e_dbus](https://git.enlightenment.org/legacy/e_dbus.git/) header files. If you have compiled and installed EFL, e_dbus and Moksha from source code this should be no problem. 
 
 Then the usual:
 
@@ -56,7 +56,7 @@ sudo make install
 
 # Credits
 
-Full credit for the orginal code of this module go the enlightenment developers:
+Full credit for the original code of this module go the enlightenment developers:
 * Gustavo Barbieri
 * Hannes Janetzek
 
