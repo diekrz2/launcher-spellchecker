@@ -29,7 +29,7 @@ First one must load the module. Now assuming one has aspell installed and an asp
 
 For a detailed explantaion of how to use this module complete with pictures see the wiki:
 
-https://github.com/rbtylee/launcher-spellchecker/wiki/Usage
+>https://github.com/rbtylee/launcher-spellchecker/wiki/Usage
 
 # Installation
 
