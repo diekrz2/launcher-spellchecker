@@ -27,7 +27,9 @@ It is a resurrection of the old e17 [*everything-aspell module*](https://git.enl
 
 First one must load the module. Now assuming one has aspell installed and an aspell dictionary, then usage should be as simple as opening Mokshas Quick Launcher and typing 's ' without the single quote marks. Note: one must type the blank following the s. The prompt will change to a colon and now type a word one wishes to check the spelling of. A list as pictured above will be displayed.
 
+For a detailed explantaion of how to use this module complete with pictures see the wiki:
 
+https://github.com/rbtylee/launcher-spellchecker/wiki/Usage
 
 # Installation
 
