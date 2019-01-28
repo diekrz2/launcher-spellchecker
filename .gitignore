@@ -18,6 +18,12 @@ e_module.spec
 install-sh
 libtool
 ltmain.sh
+debian/.debhelper/
+debian/autoreconf.after
+debian/autoreconf.before
+debian/debhelper-build-stamp
+debian/moksha-module-spellchecker.substvars
+debian/moksha-module-spellchecker/
 m4/codeset.m4
 m4/gettext.m4
 m4/glibc21.m4
