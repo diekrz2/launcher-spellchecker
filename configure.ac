@@ -13,6 +13,8 @@ AC_ISC_POSIX
 AM_INIT_AUTOMAKE([foreign])
 
 AC_CONFIG_HEADERS(config.h)
+AC_CONFIG_MACRO_DIRS([m4])
+
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 m4_divert_text([DEFAULTS], [: "${ARFLAGS=cr} ${AR_FLAGS=cr}"])
 
