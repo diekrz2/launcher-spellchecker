@@ -56,13 +56,13 @@ sudo make install
 
 Please use the GitHub issue tracker for any bugs or feature suggestions:
 
-https://github.com/rbtylee/launcher-spellchecker/issues
+>https://github.com/rbtylee/launcher-spellchecker/issues
 
 # Contributing
 
 Please submit patches to code or documentation as GitHub pull requests!
 
-Contributions must be licensed under this projects copyright (see COPYING). 
+Contributions must be licensed under this project's copyright (see COPYING). 
 
 # Support This Project
 
