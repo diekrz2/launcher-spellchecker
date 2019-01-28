@@ -50,6 +50,18 @@ make
 sudo make install
 ```
 
+# Reporting bugs
+
+Please use the GitHub issue tracker for any bugs or feature suggestions:
+
+https://github.com/rbtylee/launcher-spellchecker/issues
+
+# Contributing
+
+Please submit patches to code or documentation as GitHub pull requests!
+
+Contributions must be licensed under this projects copyright (see COPYING). 
+
 # Support This Project
 
 *Coming soon*
