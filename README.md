@@ -77,7 +77,7 @@ This software is released under the same License used in alot of the other Enlig
 
 Simply put, this software is free to use, modify and redistribute as you see fit. I do ask that you keep the copyright notice the same in any modifications. 
 
-The Documentaion is released under the [Creative Commons Attribution-ShareAlike 3.0 United States License](https://creativecommons.org/licenses/by-sa/3.0/us/).
+The Documentation is released under the [Creative Commons Attribution-ShareAlike 3.0 United States License](https://creativecommons.org/licenses/by-sa/3.0/us/).
 
 # Credits
 
@@ -86,6 +86,9 @@ Full credit for the original code of this module go the enlightenment developers
 * Hannes Janetzek
 
 and any others than may have committed on this module.
+
+Bodhi sepcific modifications:
+* Robert Wiley
 
 <p align="center">
   <i>I Stand on the shoulders of giants.</a>
