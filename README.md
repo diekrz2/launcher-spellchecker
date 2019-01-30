@@ -39,6 +39,7 @@ It is recommended Bodhi users install from Bodhi's repo:
 sudo apt update
 sudo apt install moksha-module-spellcheck
 ```
+> Note: It will be added to Bodhi's repos soon
 
 Other users need to compile the code:
 
