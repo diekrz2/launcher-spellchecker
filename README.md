@@ -84,13 +84,13 @@ The [Documentation](https://github.com/rbtylee/launcher-spellchecker/wiki) is re
 # Credits
 
 Full credit for the original code of this module go the enlightenment developers:
-* Gustavo Barbieri
-* Hannes Janetzek
+* _*Gustavo Barbieri*_
+* _*Hannes Janetzek*_
 
 and any others than may have committed on this module.
 
 Bodhi sepcific modifications:
-* Robert Wiley
+* _*Robert Wiley*_
 
 <p align="center">
   <i>I Stand on the shoulders of giants.</a>
