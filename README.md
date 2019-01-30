@@ -77,7 +77,7 @@ This software is released under the same License used in alot of the other Enlig
 
 Simply put, this software is free to use, modify and redistribute as you see fit. I do ask that you keep the copyright notice the same in any modifications. 
 
-The Documentation is released under the [Creative Commons Attribution-ShareAlike 3.0 United States License](https://creativecommons.org/licenses/by-sa/3.0/us/).
+The [Documentation](https://github.com/rbtylee/launcher-spellchecker/wiki) is released under the [Creative Commons Attribution-ShareAlike 3.0 United States License](https://creativecommons.org/licenses/by-sa/3.0/us/).
 
 # Credits
 
