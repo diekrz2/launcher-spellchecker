@@ -75,7 +75,9 @@ Contributions must be licensed under this project's copyright (see COPYING).
 
 This software is released under the same License used in alot of the other Enlightenment projects. It is a custom license but fully Open Source. Please see the included [COPYING](https://github.com/rbtylee/launcher-spellchecker/blob/master/COPYING) file and for a less legalese explanation [COPYING-PLAIN](https://github.com/rbtylee/launcher-spellchecker/blob/master/COPYING-PLAIN).
 
-Simply put, this software is free to use, modify and redistribute as you see fit. I do ask that you keep the copyright notice the same in any modifications. 
+Simply put, this software is free to use, modify and redistribute as you see fit. I do ask that you keep the copyright notice the same in any modifications.
+
+The debian files are  released the terms of the [GNU General Public License](https://www.gnu.org/licenses/gpl.html) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
 The [Documentation](https://github.com/rbtylee/launcher-spellchecker/wiki) is released under the [Creative Commons Attribution-ShareAlike 3.0 United States License](https://creativecommons.org/licenses/by-sa/3.0/us/).
 
