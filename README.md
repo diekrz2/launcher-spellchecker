@@ -60,13 +60,24 @@ Please use the GitHub issue tracker for any bugs or feature suggestions:
 
 # Contributing
 
-Please submit patches to code or documentation as GitHub pull requests!
+Help is always Welcome, as with all Open Source Projects the more people that help the better it gets!
+More translations would be especially welcome and much needed.
+
+Please submit patches to the code or documentation as GitHub pull requests!
 
 Contributions must be licensed under this project's copyright (see COPYING). 
 
 # Support This Project
 
 *Coming soon*
+
+# License
+
+This software is released under the same License used in alot of the other Enlightenment projects. It is a custom license but fully Open Source. Please see the included [COPYING](https://github.com/rbtylee/launcher-spellchecker/blob/master/COPYING) file and for a less legalese explanation [COPYING-PLAIN](https://github.com/rbtylee/launcher-spellchecker/blob/master/COPYING-PLAIN).
+
+Simply put, this software is free to use, modify and redistribute as you see fit. I do ask that you keep the copyright notice the same in any modifications. 
+
+The Documentaion is released under the [Creative Commons Attribution-ShareAlike 3.0 United States License](https://creativecommons.org/licenses/by-sa/3.0/us/).
 
 # Credits
 
