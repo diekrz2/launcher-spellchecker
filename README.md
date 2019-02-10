@@ -92,7 +92,7 @@ Full credit for the original code of this module go the enlightenment developers
 
 and any others than may have committed on this module.
 
-Bodhi sepcific modifications:
+Bodhi specific modifications:
 * _*Robert Wiley*_
 
 <p align="center">
