@@ -30,5 +30,5 @@ Comment[it]=Frontend, usa 's ' come richiamo.
 Comment[pt]=Interface gráfica para o Aspell. Utiliza "s+barra de espaço" como lançador.
 Comment[ru]=Графический интерфейс к утилите Aspell, используйте 's ' для запуска.
 Comment[tr]=Aspell önyüzü, tetikleyici olarak 's ' yazın.
-Icon=accessories-dictionary
+Icon=e-module
 X-Enlightenment-ModuleType=launcher
