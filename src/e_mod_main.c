@@ -582,7 +582,7 @@ _conf_init(E_Module *m)
    char title[4096];
 
    e_configure_registry_category_add
-     ("launcher", 80, _("Launcher"), NULL, "modules-launcher");
+     ("launcher", 80, _("Launcher"), NULL, "system-run");
 
    snprintf(title, sizeof(title), "%s: %s", _("Launcher Plugin"), _("Spell Checker"));
    e_configure_registry_item_add(_config_path, 110, title,
