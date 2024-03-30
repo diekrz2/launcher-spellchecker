@@ -62,44 +62,44 @@ _exe_restart(Plugin *p)
 
    if (p->lang && (p->lang[0] != '\0'))
      {
-   if (_conf->command == CMD_ASPELL)
-     {
-        lang_opt = "-l";
-        lang_val = p->lang;
-     }
-   else if (_conf->command == CMD_HUNSPELL)
-     {
-        lang_opt = "-d";
-        lang_val = p->lang;
-     }
-   else
-     {
-        lang_opt = "";
-        lang_val = "";
-     }
+       if (_conf->command == CMD_ASPELL)
+         {
+           lang_opt = "-l";
+           lang_val = p->lang;
+         }
+       else if (_conf->command == CMD_HUNSPELL)
+         {
+           lang_opt = "-d";
+           lang_val = p->lang;
+         }
+       else
+         {
+           lang_opt = "";
+           lang_val = "";
+         }
      }
    else if (_conf->lang)
      {
-   if (_conf->command == CMD_ASPELL)
-     {
-        lang_opt = "-l";
-        lang_val = _conf->lang;
-     }
-   else if (_conf->command == CMD_HUNSPELL)
-     {
-        lang_opt = "-d";
-        lang_val = _conf->lang;
+       if (_conf->command == CMD_ASPELL)
+         {
+           lang_opt = "-l";
+           lang_val = _conf->lang;
+         }
+       else if (_conf->command == CMD_HUNSPELL)
+         {
+           lang_opt = "-d";
+           lang_val = _conf->lang;
+         }
+       else
+         {
+           lang_opt = "";
+           lang_val = "";
+         }
      }
    else
      {
-        lang_opt = "";
-        lang_val = "";
-     }
-     }
-   else
-     {
-   lang_opt = "";
-   lang_val = "";
+       lang_opt = "";
+       lang_val = "";
      }
 
    len = snprintf(cmd, sizeof(cmd),
@@ -199,38 +199,38 @@ _cb_data(void *data, int type __UNUSED__, void *event)
    word = p->input;
    for (l = e->lines; l && l->line; l++)
      {
-   const char *word_end;
-   int word_size;
-
-   if (p->is_first)
-     {
-        ERR("ASPELL: %s", l->line);
-        p->is_first = 0;
-        continue;
-     }
-
-   word_end = _space_find(word);
-   word_size = word_end - word;
-
-   switch (l->line[0])
-     {
-      case '*':
-         _item_add(p, word, word_size, 1);
-         break;
-      case '&':
-         _item_add(p, word, word_size, 1);
-         _suggestions_add(p, l->line);
-         break;
-      case '#':
-         break;
-      case '\0':
-         break;
-      default:
-         ERR("ASPELL: unknown output: '%s'", l->line);
-     }
-
-   if (*word_end)
-     word = _space_skip(word_end + 1);
+       const char *word_end;
+       int word_size;
+    
+       if (p->is_first)
+         {
+            ERR("ASPELL: %s", l->line);
+            p->is_first = 0;
+            continue;
+         }
+    
+       word_end = _space_find(word);
+       word_size = word_end - word;
+    
+       switch (l->line[0])
+         {
+           case '*':
+              _item_add(p, word, word_size, 1);
+              break;
+           case '&':
+              _item_add(p, word, word_size, 1);
+              _suggestions_add(p, l->line);
+              break;
+           case '#':
+              break;
+           case '\0':
+              break;
+           default:
+              ERR("ASPELL: unknown output: '%s'", l->line);
+         }
+    
+       if (*word_end)
+         word = _space_skip(word_end + 1);
      }
 
    if (p->base.items)
@@ -278,55 +278,55 @@ _fetch(Evry_Plugin *plugin, const char *input)
 
    if ((int) strlen(input) < plugin->config->min_query)
      {
-   EVRY_PLUGIN_ITEMS_FREE(p);
-   return 0;
+       EVRY_PLUGIN_ITEMS_FREE(p);
+       return 0;
      }
 
    if (!p->handler.data)
      {
-   if (!p->handler.data)
-     p->handler.data = ecore_event_handler_add
-       (ECORE_EXE_EVENT_DATA, _cb_data, p);
-   if (!p->handler.del)
-     p->handler.del = ecore_event_handler_add
-       (ECORE_EXE_EVENT_DEL, _cb_del, p);
-
-   if (!_exe_restart(p))
-     return 0;
+       if (!p->handler.data)
+         p->handler.data = ecore_event_handler_add
+           (ECORE_EXE_EVENT_DATA, _cb_data, p);
+       if (!p->handler.del)
+         p->handler.del = ecore_event_handler_add
+           (ECORE_EXE_EVENT_DEL, _cb_del, p);
+    
+       if (!_exe_restart(p))
+         return 0;
      }
 
    len = sizeof(LANG_MODIFIER) - 1;
    if (strncmp(input, LANG_MODIFIER, len) == 0)
      {
-   const char *lang;
-
-   EVRY_PLUGIN_ITEMS_FREE(p);
-
-   input += len;
-   for (s = input; *s != '\0'; s++)
-     if (isspace(*s) || *s == ';')
-       break;
-
-   if (*s == '\0') /* just apply language on ' ' or ';' */
-     return 0;
-
-   if (s - input > 0)
-     lang = eina_stringshare_add_length(input, s - input);
-   else
-     lang = NULL;
-
-   if (p->lang) eina_stringshare_del(p->lang);
-   if (p->lang != lang)
-     {
-        p->lang = lang;
-        if (!_exe_restart(p))
-          return 1;
-     }
-
-   if (*s == '\0')
-     return 0;
-
-   input = s + 1;
+       const char *lang;
+    
+       EVRY_PLUGIN_ITEMS_FREE(p);
+    
+       input += len;
+       for (s = input; *s != '\0'; s++)
+         if (isspace(*s) || *s == ';')
+           break;
+    
+       if (*s == '\0') /* just apply language on ' ' or ';' */
+         return 0;
+    
+       if (s - input > 0)
+         lang = eina_stringshare_add_length(input, s - input);
+       else
+         lang = NULL;
+    
+       if (p->lang) eina_stringshare_del(p->lang);
+       if (p->lang != lang)
+         {
+            p->lang = lang;
+            if (!_exe_restart(p))
+              return 1;
+         }
+    
+       if (*s == '\0')
+         return 0;
+    
+       input = s + 1;
      }
 
    input = _space_skip(input);
@@ -370,8 +370,8 @@ _finish(Evry_Plugin *plugin)
 
    if (p->exe)
      {
-   ecore_exe_quit(p->exe);
-   ecore_exe_free(p->exe);
+       ecore_exe_quit(p->exe);
+       ecore_exe_free(p->exe);
      }
 
    IF_RELEASE(p->lang);
@@ -569,10 +569,10 @@ _conf_free(void)
 {
    if (_conf)
      {
-   if (_conf->custom) eina_stringshare_del(_conf->custom);
-   if (_conf->lang)   eina_stringshare_del(_conf->lang);
-
-   E_FREE(_conf);
+       if (_conf->custom) eina_stringshare_del(_conf->custom);
+       if (_conf->lang)   eina_stringshare_del(_conf->lang);
+    
+       E_FREE(_conf);
      }
 }
 
