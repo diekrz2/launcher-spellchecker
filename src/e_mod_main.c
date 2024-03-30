@@ -276,7 +276,7 @@ _fetch(Evry_Plugin *plugin, const char *input)
 
    if (!input) return 0;
 
-   if (strlen(input) < plugin->config->min_query)
+   if ((int) strlen(input) < plugin->config->min_query)
      {
    EVRY_PLUGIN_ITEMS_FREE(p);
    return 0;
