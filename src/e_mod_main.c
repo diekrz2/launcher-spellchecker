@@ -158,28 +158,28 @@ _suggestions_add(Plugin *p, const char *line)
    s = strchr(line, ':');
    if (!s)
      {
-   ERR("ASPELL: ERROR missing suggestion delimiter: '%s'", line);
-   return;
+       ERR("ASPELL: ERROR missing suggestion delimiter: '%s'", line);
+       return;
      }
    s++;
 
    line = _space_skip(s);
    while (*line)
      {
-   int len;
+       int len;
 
-   s = strchr(line, ',');
-   if (s)
-     len = s - line;
-   else
-     len = strlen(line);
+       s = strchr(line, ',');
+       if (s)
+         len = s - line;
+       else
+         len = strlen(line);
 
-   _item_add(p, line, len, 1);
+       _item_add(p, line, len, 1);
 
-   if (s)
-     line = _space_skip(s + 1);
-   else
-     break;
+       if (s)
+         line = _space_skip(s + 1);
+       else
+         break;
      }
 }
 
@@ -290,7 +290,7 @@ _fetch(Evry_Plugin *plugin, const char *input)
        if (!p->handler.del)
          p->handler.del = ecore_event_handler_add
            (ECORE_EXE_EVENT_DEL, _cb_del, p);
-    
+
        if (!_exe_restart(p))
          return 0;
      }
@@ -299,22 +299,22 @@ _fetch(Evry_Plugin *plugin, const char *input)
    if (strncmp(input, LANG_MODIFIER, len) == 0)
      {
        const char *lang;
-    
+
        EVRY_PLUGIN_ITEMS_FREE(p);
-    
+
        input += len;
        for (s = input; *s != '\0'; s++)
          if (isspace(*s) || *s == ';')
            break;
-    
+
        if (*s == '\0') /* just apply language on ' ' or ';' */
          return 0;
-    
+
        if (s - input > 0)
          lang = eina_stringshare_add_length(input, s - input);
        else
          lang = NULL;
-    
+
        if (p->lang) eina_stringshare_del(p->lang);
        if (p->lang != lang)
          {
@@ -322,10 +322,10 @@ _fetch(Evry_Plugin *plugin, const char *input)
             if (!_exe_restart(p))
               return 1;
          }
-    
+
        if (*s == '\0')
          return 0;
-    
+
        input = s + 1;
      }
 
@@ -571,7 +571,7 @@ _conf_free(void)
      {
        if (_conf->custom) eina_stringshare_del(_conf->custom);
        if (_conf->lang)   eina_stringshare_del(_conf->lang);
-    
+
        E_FREE(_conf);
      }
 }
