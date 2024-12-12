@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-12 16:53-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/e_mod_main.c:392 src/e_mod_main.c:450 src/e_mod_main.c:588
+msgid "Spell Checker"
+msgstr ""
+
+#: src/e_mod_main.c:464
+msgid "General"
+msgstr ""
+
+#: src/e_mod_main.c:469
+msgid "Spell checker"
+msgstr ""
+
+#: src/e_mod_main.c:472
+msgid "Aspell"
+msgstr ""
+
+#: src/e_mod_main.c:475
+msgid "Hunspell"
+msgstr ""
+
+#: src/e_mod_main.c:478
+msgid "Custom"
+msgstr ""
+
+#: src/e_mod_main.c:482
+msgid "Custom Command"
+msgstr ""
+
+#: src/e_mod_main.c:488
+msgid "Language"
+msgstr ""
+
+#: src/e_mod_main.c:586
+msgid "Launcher"
+msgstr ""
+
+#: src/e_mod_main.c:588
+msgid "Launcher Plugin"
+msgstr ""
+
+#: src/e_mod_main.c:607
+msgid "Everything Aspell"
+msgstr ""
