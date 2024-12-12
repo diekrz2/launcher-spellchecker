@@ -1,6 +1,7 @@
 #include "e.h"
-#include "e_mod_main.h"
 #include "evry_api.h"
+#include "config.h"
+#include "e_mod_main.h"
 
 #define CMD_ASPELL   1
 #define CMD_HUNSPELL 2
@@ -635,6 +636,10 @@ EAPI E_Module_Api e_modapi =
 EAPI void *
 e_modapi_init(E_Module *m)
 {
+	   /* Set up module locales*/
+   bindtextdomain(LOCALEDOMAIN, LOCALEDIR);
+   bind_textdomain_codeset(LOCALEDOMAIN, "UTF-8");
+   
    _conf_init(m);
 
    EVRY_MODULE_NEW(evry_module, evry, _plugins_init, _plugins_shutdown);
