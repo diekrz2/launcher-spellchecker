@@ -11,9 +11,9 @@ It is a resurrection of the old e17 [*everything-aspell module*](https://git.enl
   <img src="https://i.imgur.com/WSQErOl.png" alt="Screen Shot">
 </p>
 
-# Dependencies
+## Dependencies
 
-* The usual build tools, autopoint libtool intltool pkg-config  autotools-dev
+* The usual build tools,libtool, intltool, pkg-config, meson/ninja
 * [EFL](https://www.enlightenment.org/download)
 * [Moksha](https://github.com/JeffHoogland/moksha)
 * [aspell](http://aspell.net/)
@@ -23,7 +23,7 @@ It is a resurrection of the old e17 [*everything-aspell module*](https://git.enl
 >The default aspell dictinary is english (aspell-en). You can, of course, use other dictionaries with this module.
 >However before they are available you need to change the dictionary in the module settings. You must have at least one dictionary installed to use the spell checking functionality.
 
-# Usage
+## Usage
 
 First one must load the module. Now assuming one has aspell installed and an aspell dictionary, then usage should be as simple as opening Mokshas Quick Launcher and typing 's ' without the single quote marks. Note: one must type the blank following the s. The prompt will change to a colon and now type a word one wishes to check the spelling of. A list as pictured above will be displayed.
 
@@ -31,7 +31,7 @@ For a detailed explantaion of how to use this module complete with pictures see 
 
 >https://github.com/rbtylee/launcher-spellchecker/wiki/Usage
 
-# Installation
+## Installation
 
 It is recommended Bodhi users install from Bodhi's repo:
 
@@ -39,42 +39,43 @@ It is recommended Bodhi users install from Bodhi's repo:
 sudo apt update
 sudo apt install moksha-module-spellcheck
 ```
+
 > Note: It will be added to Bodhi's repos soon
 
 Other users need to compile the code:
 
-First install all the needed dependencies. Note this includes not only EFL but the EFL header files as well as the [e_dbus](https://git.enlightenment.org/legacy/e_dbus.git/) header files. If you have compiled and installed EFL, e_dbus and Moksha from source code this should be no problem. 
+First install all the needed dependencies. Note this includes not only EFL but the EFL header files. If you have compiled and installed EFL and Moksha from source code this should be no problem.
 
 Then the usual:
 
 ```ShellSession
-./autogen.sh
-make
-sudo make install
+meson . build
+ninja -C build
+sudo ninja -C build
 ```
 
-# Reporting bugs
+## Reporting bugs
 
 Please use the GitHub issue tracker for any bugs or feature suggestions:
 
 >https://github.com/rbtylee/launcher-spellchecker/issues
 
-# Contributing
+## Contributing
 
 Help is always Welcome, as with all Open Source Projects the more people that help the better it gets!
 More translations would be especially welcome and much needed.
 
 Please submit patches to the code or documentation as GitHub pull requests!
 
-Contributions must be licensed under this project's copyright (see COPYING). 
+Contributions must be licensed under this project's copyright (see COPYING).
 
-# Support This Project
+## Support This Project
 
-This Module is the first of several _Quick Launcher_ plugins I plan on either restoring to Bodhi Linux or creating myself or with the help of Štefan. 
+This Module is the first of several _Quick Launcher_ plugins I plan on either restoring to Bodhi Linux or creating myself or with the help of Štefan.
 
-Donations to [Bodhi Linux](https://www.bodhilinux.com/donate/) would be greatly appreciate and keep our distro moving along. But if you like the work I do for Bodhi and wish to see more of it, I'd be happy about a donation. You can either donate via [PayPall](https://www.paypal.com/paypalme/rbtylee) or [Liberapay](https://liberapay.com/ylee/). 
+Donations to [Bodhi Linux](https://www.bodhilinux.com/donate/) would be greatly appreciate and keep our distro moving along. But if you like the work I do for Bodhi and wish to see more of it, I'd be happy about a donation. You can either donate via [PayPall](https://www.paypal.com/paypalme/rbtylee) or [Liberapay](https://liberapay.com/ylee/).
 
-# License
+## License
 
 This software is released under the same License used in alot of the other Enlightenment projects. It is a custom license but fully Open Source. Please see the included [COPYING](https://github.com/rbtylee/launcher-spellchecker/blob/master/COPYING) file and for a less legalese explanation [COPYING-PLAIN](https://github.com/rbtylee/launcher-spellchecker/blob/master/COPYING-PLAIN).
 
@@ -84,7 +85,7 @@ The debian files are  released the terms of the [GNU General Public License](htt
 
 The [Documentation](https://github.com/rbtylee/launcher-spellchecker/wiki) is released under the [Creative Commons Attribution-ShareAlike 3.0 United States License](https://creativecommons.org/licenses/by-sa/3.0/us/).
 
-# Credits
+## Credits
 
 Full credit for the original code of this module go the enlightenment developers:
 * _*Gustavo Barbieri*_
