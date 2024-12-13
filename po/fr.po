@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: spell-checker\n"
-"Report-Msgid-Bugs-To: ylee@bodhilinux.com\n"
-"POT-Creation-Date: 2019-01-27 07:08-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-12 16:53-0500\n"
 "PO-Revision-Date: 2021-06-03 10:58+0200\n"
 "Last-Translator: Philippe Jean Guillaumie <similar@orange.fr>\n"
 "Language-Team: French\n"
@@ -16,47 +16,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.3\n"
 
-#: src/e_mod_main.c:391 src/e_mod_main.c:449 src/e_mod_main.c:587
+#: src/e_mod_main.c:392 src/e_mod_main.c:450 src/e_mod_main.c:588
 msgid "Spell Checker"
 msgstr "Vérificateur d'orthographe"
 
-#: src/e_mod_main.c:463
+#: src/e_mod_main.c:464
 msgid "General"
 msgstr "Paramètres"
 
-#: src/e_mod_main.c:468
+#: src/e_mod_main.c:469
 msgid "Spell checker"
 msgstr "Correcteur"
 
-#: src/e_mod_main.c:471
+#: src/e_mod_main.c:472
 msgid "Aspell"
 msgstr "Aspell"
 
-#: src/e_mod_main.c:474
+#: src/e_mod_main.c:475
 msgid "Hunspell"
 msgstr "Hunspell"
 
-#: src/e_mod_main.c:477
+#: src/e_mod_main.c:478
 msgid "Custom"
 msgstr "Personnalisé"
 
-#: src/e_mod_main.c:481
+#: src/e_mod_main.c:482
 msgid "Custom Command"
 msgstr "Commande personnalisée"
 
-#: src/e_mod_main.c:487
+#: src/e_mod_main.c:488
 msgid "Language"
 msgstr "Langue"
 
-#: src/e_mod_main.c:585
+#: src/e_mod_main.c:586
 msgid "Launcher"
 msgstr "Lanceur"
 
-#: src/e_mod_main.c:587
+#: src/e_mod_main.c:588
 msgid "Launcher Plugin"
 msgstr "Greffon Omni"
 
-#: src/e_mod_main.c:606
+#: src/e_mod_main.c:607
 msgid "Everything Aspell"
 msgstr "Aspell Omni"
 
