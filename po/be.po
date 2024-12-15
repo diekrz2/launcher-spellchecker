@@ -1,0 +1,64 @@
+# Belarusian translation for Launcher Spell checker module.
+# Gustavo Barbieri      <barbieri@gmail.com>
+# Hannes Janetzek       <hannes.janetzek@gmail.com>
+# Bodhized by
+# Robert Wiley          <ylee@bodhilinux.com>
+# This file is distributed under the same license as the Launcher Spell checker module.
+# R0bur <robursw@gmail.com>, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: launcher-spellchecker\n"
+"Report-Msgid-Bugs-To: ylee@bodhilinux.com\n"
+"POT-Creation-Date: 2024-12-12 16:53-0500\n"
+"PO-Revision-Date: 2024-12-15 16:00+0300\n"
+"Last-Translator: R0bur <robursw@gmail.com>\n"
+"Language-Team: Belarusian\n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/e_mod_main.c:392 src/e_mod_main.c:450 src/e_mod_main.c:588
+msgid "Spell Checker"
+msgstr "Праверка Арфаграфіі"
+
+#: src/e_mod_main.c:464
+msgid "General"
+msgstr "Асноўныя"
+
+#: src/e_mod_main.c:469
+msgid "Spell checker"
+msgstr "Праверка арфаграфіі"
+
+#: src/e_mod_main.c:472
+msgid "Aspell"
+msgstr "Aspell"
+
+#: src/e_mod_main.c:475
+msgid "Hunspell"
+msgstr "Hunspell"
+
+#: src/e_mod_main.c:478
+msgid "Custom"
+msgstr "Карыстальніцкія"
+
+#: src/e_mod_main.c:482
+msgid "Custom Command"
+msgstr "Карыстальніцкая каманда"
+
+#: src/e_mod_main.c:488
+msgid "Language"
+msgstr "Мова"
+
+#: src/e_mod_main.c:586
+msgid "Launcher"
+msgstr "Хуткі запуск"
+
+#: src/e_mod_main.c:588
+msgid "Launcher Plugin"
+msgstr "Плагін Хуткага запуску"
+
+#: src/e_mod_main.c:607
+msgid "Everything Aspell"
+msgstr "Усё: Арфаграфія"
