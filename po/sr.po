@@ -1,5 +1,5 @@
-#
-# Саша Петровић <salepetronije@gmail.com>, 2012.
+# Serbian translation for Launcher Spell checker module.
+# This file is distributed under the same license as the Launcher Spell checker module.
 #
 msgid ""
 msgstr ""
@@ -8,7 +8,7 @@ msgstr ""
 "POT-Creation-Date: 2024-12-12 16:53-0500\n"
 "PO-Revision-Date: 2013-04-20 18:08+0000\n"
 "Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
-"Language-Team: српски <xfce-i18n@xfce.org>\n"
+"Language-Team: Serbian\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
