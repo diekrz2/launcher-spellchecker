@@ -1,21 +1,23 @@
 # Portuguese translation for spell-checker.
-# This file is put in the public domain.
+# Copyright (C) 2024 Bodhi Linux
+# This file is distributed under the same license as the spell-checker package.
 # Sérgio Marques <smarquespt@gmail.com>, 2012.
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2021.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2021-2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: spell-checker VERSION\n"
 "Report-Msgid-Bugs-To: moksha@bodhilinux.com\n"
 "POT-Creation-Date: 2024-12-12 16:53-0500\n"
-"PO-Revision-Date: 2021-06-03 11:20+0100\n"
+"PO-Revision-Date: 2024-12-18 19:36+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: src/e_mod_main.c:392 src/e_mod_main.c:450 src/e_mod_main.c:588
 msgid "Spell Checker"
@@ -27,7 +29,7 @@ msgstr "Geral"
 
 #: src/e_mod_main.c:469
 msgid "Spell checker"
-msgstr "Corretor ortográfico"
+msgstr "Corretor"
 
 #: src/e_mod_main.c:472
 msgid "Aspell"
@@ -55,11 +57,8 @@ msgstr "Lançador"
 
 #: src/e_mod_main.c:588
 msgid "Launcher Plugin"
-msgstr "Extensão do lançador"
+msgstr "Lançador"
 
 #: src/e_mod_main.c:607
 msgid "Everything Aspell"
-msgstr "Everything Aspell"
-
-#~ msgid "Everything Plugin"
-#~ msgstr "<i>Plugin</i> Everything"
+msgstr "Aspell Omni"
