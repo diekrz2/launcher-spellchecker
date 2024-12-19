@@ -1,0 +1,61 @@
+# Slovak translation for Spell-checker.
+# This file is put in the public domain.
+# Štefan Uram <thewaiter@bodhilinux.com>.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: spell-checker\n"
+"Report-Msgid-Bugs-To: moksha@bodhilinux.com\n"
+"POT-Creation-Date: 2024-12-12 16:53-0500\n"
+"PO-Revision-Date: 2021-06-03 10:58+0200\n"
+"Last-Translator: Štefan Uram <thewaiter@bodhilinux.com>\n"
+"Language-Team: Czech\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+
+#: src/e_mod_main.c:392 src/e_mod_main.c:450 src/e_mod_main.c:588
+msgid "Spell Checker"
+msgstr "Kontrola Aspell"
+
+#: src/e_mod_main.c:464
+msgid "General"
+msgstr "Všeobecné"
+
+#: src/e_mod_main.c:469
+msgid "Spell checker"
+msgstr "Kontrola Aspell"
+
+#: src/e_mod_main.c:472
+msgid "Aspell"
+msgstr "Aspell"
+
+#: src/e_mod_main.c:475
+msgid "Hunspell"
+msgstr "Hunspell"
+
+#: src/e_mod_main.c:478
+msgid "Custom"
+msgstr "Volitelné"
+
+#: src/e_mod_main.c:482
+msgid "Custom Command"
+msgstr "Volitelný příkaz"
+
+#: src/e_mod_main.c:488
+msgid "Language"
+msgstr "Jazyk"
+
+#: src/e_mod_main.c:586
+msgid "Launcher"
+msgstr "Spouštěč"
+
+#: src/e_mod_main.c:588
+msgid "Launcher Plugin"
+msgstr "Plugin pro Spouštěč"
+
+#: src/e_mod_main.c:607
+msgid "Everything Aspell"
+msgstr "Plugin pro Evry"
