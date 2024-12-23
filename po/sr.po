@@ -1,5 +1,7 @@
-# Serbian translation for Launcher Spell checker module.
+# Serbian translation for the Launcher Spell-checker module.
 # This file is distributed under the same license as the Launcher Spell checker module.
+#
+# Саша Петровић <salepetronije@gmail.com>
 #
 msgid ""
 msgstr ""

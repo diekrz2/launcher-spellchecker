@@ -1,5 +1,6 @@
-# Italian translation for spell-checker.
+# Italian translation for the Launcher Spell-checker module.
 # This file is put in the public domain.
+#
 # Massimo Maiurana <maiurana@gmail.com>, 2012.
 #
 msgid ""

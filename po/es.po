@@ -1,6 +1,8 @@
-# Spanish translation for spell-checker.
+# Spanish translation for the Launcher Spell-checker module.
 # This file is put in the public domain.
+#
 # Aníbal Garrido <khany@member.trisquel.info>, 2012.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: spell-checker VERSION\n"

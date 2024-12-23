@@ -1,10 +1,7 @@
-# Belarusian translation for Launcher Spell checker module.
-# Gustavo Barbieri      <barbieri@gmail.com>
-# Hannes Janetzek       <hannes.janetzek@gmail.com>
-# Bodhized by
-# Robert Wiley          <moksha@bodhilinux.com>
+# Belarusian translation for the Launcher Spell-checker module.
 # This file is distributed under the same license as the Launcher Spell checker module.
-# R0bur <robursw@gmail.com>, 2024
+#
+# Gustavo Barbieri      <barbieri@gmail.com>
 #
 msgid ""
 msgstr ""
