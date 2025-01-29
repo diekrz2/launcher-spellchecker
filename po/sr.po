@@ -1,11 +1,11 @@
 # Serbian translation for the Launcher Spell-checker module.
-# This file is distributed under the same license as the Launcher Spell checker module.
+# This file is put in the public domain.
 #
 # Саша Петровић <salepetronije@gmail.com>
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: spell-checker VERSION\n"
+"Project-Id-Version: launcher-spellchecker\n"
 "Report-Msgid-Bugs-To: moksha@bodhilinux.com\n"
 "POT-Creation-Date: 2024-12-12 16:53-0500\n"
 "PO-Revision-Date: 2013-04-20 18:08+0000\n"

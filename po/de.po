@@ -1,11 +1,11 @@
-# German translation for the Launcher Spell-checker module.
+# German translation for the Launcher Spellchecker module.
 # This file is put in the public domain.
 #
 # Christian Becker <xpistianbecker@gmail.com>, 2024.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: spell-checker VERSION\n"
+"Project-Id-Version: launcher-spellchecker\n"
 "Report-Msgid-Bugs-To: moksha@bodhilinux.com\n"
 "POT-Creation-Date: 2024-12-12 16:53-0500\n"
 "PO-Revision-Date: 2024-12-26 13:30+0100\n"

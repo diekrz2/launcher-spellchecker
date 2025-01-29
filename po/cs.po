@@ -1,11 +1,11 @@
-# Slovak translation for the Launcher Spell-checker module.
+# Slovak translation for the Launcher Spellchecker module.
 # This file is put in the public domain.
 #
 # Štefan Uram <thewaiter@bodhilinux.com>.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: spell-checker\n"
+"Project-Id-Version: launcher-spellchecker\n"
 "Report-Msgid-Bugs-To: moksha@bodhilinux.com\n"
 "POT-Creation-Date: 2024-12-12 16:53-0500\n"
 "PO-Revision-Date: 2021-06-03 10:58+0200\n"

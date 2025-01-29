@@ -1,11 +1,11 @@
-# Esperanto translation for the Launcher Spell-checker module.
+# Esperanto translation for the Launcher Spellchecker module.
 # This file is put in the public domain.
 #
 # Eliovir
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: spell-checker VERSION\n"
+"Project-Id-Version: launcher-spellchecker\n"
 "Report-Msgid-Bugs-To: moksha@bodhilinux.com\n"
 "POT-Creation-Date: 2024-12-12 16:53-0500\n"
 "PO-Revision-Date: 2012-12-07 12:47+0000\n"
