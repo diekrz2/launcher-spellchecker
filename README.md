@@ -73,7 +73,7 @@ Contributions must be licensed under this project's copyright (see COPYING).
 
 This Module is the first of several _Quick Launcher_ plugins I plan on either restoring to Bodhi Linux or creating myself or with the help of Štefan.
 
-Donations to [Bodhi Linux](https://www.bodhilinux.com/donate/) would be greatly appreciate and keep our distro moving along. But if you like the work I do for Bodhi and wish to see more of it, I'd be happy about a donation. You can either donate via [PayPall](https://www.paypal.com/paypalme/rbtylee) or [Liberapay](https://liberapay.com/ylee/).
+Donations to [Bodhi Linux](https://www.bodhilinux.com/donate/) would be greatly appreciate and keep our distro moving along. But if you like the work we do for Bodhi and wish to see more of it, I'd be happy about a donation. You can either donate via [PayPall](https://www.paypal.com/paypalme/rbtylee) or [Liberapay](https://liberapay.com/ylee/).
 
 ## License
 
