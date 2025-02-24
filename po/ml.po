@@ -1,0 +1,62 @@
+# Malayalam translation for the Launcher Spellchecker module.
+# This file is put in the public domain.
+#
+# Indraneel Rajeevan <https://github.com/indraneel12>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: launcher-spellchecker\n"
+"Report-Msgid-Bugs-To: moksha@bodhilinux.com\n"
+"POT-Creation-Date: 2025-02-24 22:22+0530\n"
+"PO-Revision-Date: 2025-02-24 22:22+0530\n"
+"Last-Translator: Indraneel Rajeevan <https://github.com/indraneel12>\n"
+"Language-Team: Malayalam\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: src/e_mod_main.c:392 src/e_mod_main.c:450 src/e_mod_main.c:588
+msgid "Spell Checker"
+msgstr "സ്പെൽ ചെക്കർ"
+
+#: src/e_mod_main.c:464
+msgid "General"
+msgstr "പൊതുവായ"
+
+#: src/e_mod_main.c:469
+msgid "Spell checker"
+msgstr "സ്പെൽ ചെക്കർ"
+
+#: src/e_mod_main.c:472
+msgid "Aspell"
+msgstr "ഏസ്പെൽ"
+
+#: src/e_mod_main.c:475
+msgid "Hunspell"
+msgstr "ഹൻസ്പെൽ"
+
+#: src/e_mod_main.c:478
+msgid "Custom"
+msgstr "ഇഷ്ടാനുസൃത"
+
+#: src/e_mod_main.c:482
+msgid "Custom Command"
+msgstr "ഇഷ്ടാനുസൃത നിർദേശം"
+
+#: src/e_mod_main.c:488
+msgid "Language"
+msgstr "ഭാഷ"
+
+#: src/e_mod_main.c:586
+msgid "Launcher"
+msgstr "ലോഞ്ചർ"
+
+#: src/e_mod_main.c:588
+msgid "Launcher Plugin"
+msgstr "ലോഞ്ചർ പ്ലഗിൻ"
+
+#: src/e_mod_main.c:607
+msgid "Everything Aspell"
+msgstr "പരമോന്നത ഏസ്പെൽ"
