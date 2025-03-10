@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: launcher-spellchecker\n"
+"Report-Msgid-Bugs-To: moksha@bodhilinux.com\n"
+"POT-Creation-Date: 2024-12-12 16:53-0500\n"
+"PO-Revision-Date: 2025-03-10 18:14-0300\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: src/e_mod_main.c:392 src/e_mod_main.c:450 src/e_mod_main.c:588
+msgid "Spell Checker"
+msgstr "Corretor ortográfico"
+
+#: src/e_mod_main.c:464
+msgid "General"
+msgstr "Geral"
+
+#: src/e_mod_main.c:469
+msgid "Spell checker"
+msgstr "Corretor ortográfico"
+
+#: src/e_mod_main.c:472
+msgid "Aspell"
+msgstr "Aspell"
+
+#: src/e_mod_main.c:475
+msgid "Hunspell"
+msgstr "Hunspell"
+
+#: src/e_mod_main.c:478
+msgid "Custom"
+msgstr "Customizado"
+
+#: src/e_mod_main.c:482
+msgid "Custom Command"
+msgstr "Comando customizado"
+
+#: src/e_mod_main.c:488
+msgid "Language"
+msgstr "Idioma"
+
+#: src/e_mod_main.c:586
+msgid "Launcher"
+msgstr "Lançador"
+
+#: src/e_mod_main.c:588
+msgid "Launcher Plugin"
+msgstr "Plugin do lançador"
+
+#: src/e_mod_main.c:607
+msgid "Everything Aspell"
+msgstr "Everything Aspell"
